@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     console.log('Contact form submission:', body);
 
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch (_error) {
     return NextResponse.json({ message: 'Internal server error' }, { status: 500 });
   }
 }

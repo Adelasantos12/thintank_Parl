@@ -1,7 +1,6 @@
 import { getPayloadClient } from '@/lib/payload';
 import PublicationFilters from '@/components/publications/PublicationFilters';
 import { Link } from '@/i18n/routing';
-import { format } from 'date-fns';
 
 export default async function PublicationsPage({
   params,

@@ -35,7 +35,7 @@ export default function SubscribeForm() {
       } else {
         throw new Error('Error');
       }
-    } catch (err) {
+    } catch (_err) {
       setStatus('error');
     }
   };

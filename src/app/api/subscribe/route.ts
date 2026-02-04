@@ -5,7 +5,7 @@ export async function POST(req: Request) {
     const body = await req.json();
     console.log('Newsletter subscription:', body.email);
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch (_error) {
     return NextResponse.json({ message: 'Error' }, { status: 500 });
   }
 }

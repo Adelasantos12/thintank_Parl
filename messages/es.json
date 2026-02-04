@@ -1,0 +1,19 @@
+{
+  "Index": {
+    "title": "Instituto de Ginebra para la Gobernanza Parlamentaria",
+    "description": "Excelencia en la gobernanza parlamentaria."
+  },
+  "Nav": {
+    "home": "Inicio",
+    "publications": "Publicaciones",
+    "about": "Acerca de",
+    "governance": "Gobernanza",
+    "contact": "Contacto"
+  },
+  "Common": {
+    "readMore": "Leer más",
+    "downloadPDF": "Descargar PDF",
+    "cite": "Citar",
+    "filters": "Filtros"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "Index": {
+    "title": "Geneva Institute for Parliamentary Governance",
+    "description": "Excellence in parliamentary governance.",
+    "explore": "Explore Publications",
+    "learn": "Learn About Us",
+    "researchTitle": "Research",
+    "researchText": "Our researchers provide in-depth analysis of parliamentary trends and governance models to inform better decision-making.",
+    "advisoryTitle": "Advisory",
+    "advisoryText": "Expert guidance for parliaments seeking to modernize their structures and improve legislative efficiency.",
+    "networkTitle": "Global Network",
+    "networkText": "Connecting practitioners and scholars from across the globe to share best practices in democratic governance."
+  },
+  "Nav": {
+    "home": "Home",
+    "publications": "Publications",
+    "about": "About",
+    "governance": "Governance",
+    "contact": "Contact"
+  },
+  "Common": {
+    "readMore": "Read more",
+    "downloadPDF": "Download PDF",
+    "cite": "Cite",
+    "filters": "Filters"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "Have questions about our research or interested in collaborating? Please fill out the form below and our team will get back to you.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message Sent",
+    "successText": "Thank you for contacting GIPG. We will get back to you soon.",
+    "office": "Our Office",
+    "address": "Rue de Varembé 1, 1202 Geneva, Switzerland"
+  }
+}

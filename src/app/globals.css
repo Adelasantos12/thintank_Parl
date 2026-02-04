@@ -1,5 +1,29 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'TT Rationalist';
+  src: url('/fonts/tt-rationalist-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Rationalist';
+  src: url('/fonts/tt-rationalist-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Rationalist';
+  src: url('/fonts/tt-rationalist-extrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-ink: #0B1220;
   --color-navy: #0F2A4A;
@@ -7,6 +31,9 @@
   --color-border-custom: #E2E8F0;
   --color-background-custom: #F8FAFC;
   --color-accent: #8B1E2D;
+
+  --font-heading: "TT Rationalist", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-source-serif), ui-serif, Georgia, serif;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
@@ -20,10 +47,29 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.675;
 }
 
 @layer base {
   html {
-    @apply antialiased;
+    @apply antialiased text-ink;
+  }
+
+  h1 {
+    @apply font-heading font-extrabold text-[42px] leading-[1.125] tracking-[-0.01em] text-navy;
+  }
+
+  h2 {
+    @apply font-heading font-normal text-[30px] leading-[1.2] text-navy;
+  }
+
+  h3, h4 {
+    @apply font-heading font-normal text-[22px] leading-tight text-navy;
+  }
+
+  .subtitle {
+    @apply font-heading font-light text-[17px] leading-[1.4] text-slate;
   }
 }

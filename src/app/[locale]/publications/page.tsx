@@ -66,7 +66,7 @@ export default async function PublicationsPage({
 
         {/* Results */}
         <main className="flex-grow">
-          <h1 className="text-3xl font-serif font-bold text-navy mb-8 border-b border-border-custom pb-4">
+          <h1 className="mb-8 border-b border-border-custom pb-4">
             Publications
           </h1>
 
@@ -83,25 +83,25 @@ export default async function PublicationsPage({
                       </div>
                     )}
                     <div>
-                      <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-widest text-accent mb-2">
+                      <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-widest text-accent mb-2">
                         <span>{pub.type?.name}</span>
                         <span>•</span>
                         <span>{pub.year}</span>
                       </div>
                       <Link href={`/publications/${pub.slug}`}>
-                        <h2 className="text-xl font-bold text-navy group-hover:text-accent transition-colors mb-3">
+                        <h2 className="mb-3 group-hover:text-accent transition-colors">
                           {pub.title}
                         </h2>
                       </Link>
-                      <p className="text-slate text-sm line-clamp-3 mb-4 leading-relaxed">
+                      <p className="text-slate text-[15px] leading-relaxed line-clamp-3 mb-4">
                         {pub.abstract}
                       </p>
                       <div className="flex items-center space-x-4">
-                         <Link href={`/publications/${pub.slug}`} className="text-sm font-semibold text-navy hover:underline">
+                         <Link href={`/publications/${pub.slug}`} className="text-sm font-bold text-navy hover:underline">
                             Read more
                          </Link>
                          {pub.pdf && (
-                           <a href={typeof pub.pdf === 'object' ? pub.pdf.url : '#'} className="text-sm font-semibold text-navy hover:underline flex items-center">
+                           <a href={typeof pub.pdf === 'object' ? pub.pdf.url : '#'} className="text-sm font-bold text-navy hover:underline flex items-center">
                              PDF
                            </a>
                          )}

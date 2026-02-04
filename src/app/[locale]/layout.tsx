@@ -62,7 +62,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${inter.variable} ${sourceSerif.variable} font-sans antialiased bg-background-custom text-ink min-h-screen flex flex-col`}
+        className={`${inter.variable} ${sourceSerif.variable} font-serif antialiased bg-background-custom text-ink min-h-screen flex flex-col`}
       >
         <NextIntlClientProvider messages={messages}>
           <Header />

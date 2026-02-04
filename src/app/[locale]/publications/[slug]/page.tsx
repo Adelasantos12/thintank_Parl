@@ -54,32 +54,34 @@ export default async function PublicationDetailPage({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Breadcrumbs */}
-      <nav className="text-sm text-slate mb-8">
+      <nav className="text-[13px] font-heading font-normal text-slate mb-8">
         <Link href="/publications" className="hover:text-navy">Publications</Link>
         <span className="mx-2">/</span>
-        <span className="text-navy font-medium truncate inline-block max-w-[200px] align-bottom">{pub.title}</span>
+        <span className="text-navy truncate inline-block max-w-[200px] align-bottom">{pub.title}</span>
       </nav>
 
       <div className="flex flex-col lg:flex-row gap-16">
         {/* Main Column */}
         <article className="flex-grow max-w-3xl">
           <header className="mb-12">
-            <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-widest text-accent mb-4">
+            <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-widest text-accent mb-4">
               <span>{pub.type?.name}</span>
               <span>•</span>
               <span>{pub.year}</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-navy leading-tight mb-6">
+            <h1 className="mb-6">
               {pub.title}
             </h1>
-            <div className="flex flex-wrap gap-4 text-slate italic">
+            <div className="flex flex-wrap gap-4 text-slate text-[15px] italic">
               {pub.authors?.map((author: any) => author.name).join(', ')}
             </div>
           </header>
 
-          <section className="bg-white p-8 border border-border-custom rounded-lg mb-12 shadow-sm italic text-slate leading-relaxed">
-            <h2 className="not-italic font-bold text-navy mb-4 uppercase tracking-widest text-xs">Abstract</h2>
-            {pub.abstract}
+          <section className="bg-white p-8 border border-border-custom rounded mb-12 shadow-sm">
+            <h2 className="text-xs font-bold uppercase tracking-widest text-navy mb-4">Abstract</h2>
+            <div className="text-slate italic leading-relaxed text-[16px]">
+              {pub.abstract}
+            </div>
           </section>
 
           <div className="publication-content">
@@ -94,7 +96,7 @@ export default async function PublicationDetailPage({
             {pub.pdf && (
               <a
                 href={typeof pub.pdf === 'object' ? pub.pdf.url : '#'}
-                className="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-bold rounded-md shadow-sm text-white bg-navy hover:bg-ink focus:outline-none"
+                className="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent text-sm font-bold rounded shadow-sm text-white bg-navy hover:bg-ink focus:outline-none transition-colors"
               >
                 Download PDF
               </a>
@@ -110,10 +112,10 @@ export default async function PublicationDetailPage({
             <div className="pt-8 border-t border-border-custom space-y-6">
               {pub.topics?.length > 0 && (
                 <div>
-                  <h3 className="text-xs font-bold uppercase text-slate tracking-widest mb-3">Topics</h3>
+                  <h3 className="text-[11px] font-bold uppercase text-slate tracking-widest mb-3">Topics</h3>
                   <div className="flex flex-wrap gap-2">
                     {pub.topics.map((topic: any) => (
-                      <span key={topic.id} className="text-xs bg-white border border-border-custom px-2 py-1 rounded text-slate">
+                      <span key={topic.id} className="text-[11px] font-bold bg-white border border-border-custom px-2 py-1 rounded text-slate">
                         {topic.name}
                       </span>
                     ))}
@@ -122,10 +124,10 @@ export default async function PublicationDetailPage({
               )}
               {pub.regions?.length > 0 && (
                 <div>
-                  <h3 className="text-xs font-bold uppercase text-slate tracking-widest mb-3">Regions</h3>
+                  <h3 className="text-[11px] font-bold uppercase text-slate tracking-widest mb-3">Regions</h3>
                   <div className="flex flex-wrap gap-2">
                     {pub.regions.map((region: any) => (
-                      <span key={region.id} className="text-xs bg-white border border-border-custom px-2 py-1 rounded text-slate">
+                      <span key={region.id} className="text-[11px] font-bold bg-white border border-border-custom px-2 py-1 rounded text-slate">
                         {region.name}
                       </span>
                     ))}

@@ -13,4 +13,3 @@ nixPkgs = ["nodejs", "npm", "postgresql"]
 
 [build.nixpacks]
 plan = "npm install && npm run build"
->>>>>>> REPLACE

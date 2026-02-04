@@ -9,7 +9,7 @@ restartPolicyType = "ON_FAILURE"
 maxRestartCount = 10
 
 [build.setup]
-nixPkgs = ["nodejs", "npm", "postgresql"]
+nixPkgs = ["nodejs_20", "npm", "postgresql"]
 
 [build.nixpacks]
 plan = "npm install && npm run build"

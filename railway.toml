@@ -3,10 +3,10 @@ builder = "NIXPACKS"
 
 [deploy]
 startCommand = "npm run start"
-healthcheckPath = "/api/payload/globals/settings"
-healthcheckTimeout = 100
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
-maxRestartCount = 10
+maxRestartCount = 5
 
 [build.setup]
 nixPkgs = ["nodejs_20", "npm", "postgresql"]

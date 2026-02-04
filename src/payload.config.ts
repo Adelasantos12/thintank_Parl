@@ -26,7 +26,7 @@ export default buildConfig({
   collections: [Users, Topics, Regions, PublicationTypes, Authors, Media, Pages, Publications],
   globals: [Settings],
   editor: lexicalEditor({}),
-  secret: process.env.PAYLOAD_SECRET as string,
+  secret: process.env.PAYLOAD_SECRET || 'YOUR_SECRET_HERE',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },

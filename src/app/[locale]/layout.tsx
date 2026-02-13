@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter, Source_Serif_4, Montserrat } from "next/font/google";
 import "../globals.css";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
@@ -20,24 +20,32 @@ const sourceSerif = Source_Serif_4({
   display: "swap",
 });
 
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["400", "500", "800"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
-    template: '%s | GIPG',
-    default: 'Geneva Institute for Parliamentary Governance (GIPG)',
+    template: '%s | Genève Center',
+    default: 'Genève Center for Parliamentary Governance | Geneva-based Excellence',
   },
-  description: "Swiss institute dedicated to parliamentary governance and excellence.",
+  description: "The Genève Center for Parliamentary Governance is a Geneva-based institution dedicated to excellence in parliamentary governance worldwide.",
+  keywords: ["Genève", "Geneva", "Parliamentary Governance", "Parliaments", "Democratic Governance", "Switzerland"],
   openGraph: {
-    title: 'GIPG',
-    description: 'Swiss institute dedicated to parliamentary governance and excellence.',
+    title: 'Genève Center for Parliamentary Governance',
+    description: 'Geneva-based institution dedicated to excellence in parliamentary governance worldwide.',
     url: 'https://gipg.ch',
-    siteName: 'GIPG',
+    siteName: 'Genève Center',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GIPG',
-    description: 'Swiss institute dedicated to parliamentary governance and excellence.',
+    title: 'Genève Center for Parliamentary Governance',
+    description: 'Geneva-based institution dedicated to excellence in parliamentary governance worldwide.',
   },
 };
 
@@ -62,7 +70,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${inter.variable} ${sourceSerif.variable} font-serif antialiased bg-background-custom text-ink min-h-screen flex flex-col`}
+        className={`${inter.variable} ${sourceSerif.variable} ${montserrat.variable} font-serif antialiased bg-background-custom text-ink min-h-screen flex flex-col`}
       >
         <NextIntlClientProvider messages={messages}>
           <Header />

@@ -26,7 +26,7 @@ export default async function GovernancePage({ params }: { params: Promise<{ loc
         ) : (
           <div className="prose prose-slate max-w-none">
             <p className="text-xl text-slate leading-relaxed">
-              GIPG is governed by an International Board of Trustees and an Executive Committee
+              The Genève Center for Parliamentary Governance is governed by an International Board of Trustees and an Executive Committee
               based in Geneva.
             </p>
             <h2 className="text-2xl font-bold text-navy mt-12 mb-6">Our Structure</h2>

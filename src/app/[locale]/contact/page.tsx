@@ -20,7 +20,7 @@ export default function ContactPage() {
           <div>
             <h3 className="font-bold text-navy uppercase tracking-widest mb-4 text-xs">{t('office')}</h3>
             <p className="text-slate whitespace-pre-line">
-              Geneva Institute for Parliamentary Governance<br />
+              Genève Center for Parliamentary Governance<br />
               {t('address')}
             </p>
           </div>

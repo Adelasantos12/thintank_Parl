@@ -1,7 +1,15 @@
 {
   "Index": {
-    "title": "Instituto de Ginebra para la Gobernanza Parlamentaria",
-    "description": "Excelencia en la gobernanza parlamentaria."
+    "title": "Genève Center for Parliamentary Governance",
+    "description": "Excelencia en la gobernanza parlamentaria.",
+    "explore": "Explorar publicaciones",
+    "learn": "Sobre nosotros",
+    "researchTitle": "Investigación",
+    "researchText": "Nuestros investigadores proporcionan un análisis profundo de las tendencias parlamentarias y los modelos de gobernanza.",
+    "advisoryTitle": "Asesoría",
+    "advisoryText": "Orientación experta para parlamentos que buscan modernizar sus estructuras.",
+    "networkTitle": "Red Global",
+    "networkText": "Conectando a profesionales y académicos de todo el mundo."
   },
   "Nav": {
     "home": "Inicio",
@@ -15,5 +23,18 @@
     "downloadPDF": "Descargar PDF",
     "cite": "Citar",
     "filters": "Filtros"
+  },
+  "Contact": {
+    "title": "Contáctenos",
+    "description": "¿Tiene preguntas sobre nuestra investigación o está interesado en colaborar?",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Message",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado",
+    "successText": "Gracias por contactar al Genève Center. Nos pondremos en contacto pronto.",
+    "office": "Nuestra oficina",
+    "address": "Rue de Varembé 1, 1202 Ginebra, Suiza"
   }
 }

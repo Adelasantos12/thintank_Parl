@@ -1,6 +1,6 @@
 {
   "Index": {
-    "title": "Institut de Genève pour la Gouvernance Parlementaire",
+    "title": "Genève Center for Parliamentary Governance",
     "description": "Excellence dans la gouvernance parlementaire.",
     "explore": "Explorer les publications",
     "learn": "À propos de nous",
@@ -33,7 +33,7 @@
     "send": "Envoyer le message",
     "sending": "Envoi...",
     "success": "Message envoyé",
-    "successText": "Merci d'avoir contacté le GIPG. Nous vous répondrons bientôt.",
+    "successText": "Merci d'avoir contacté le Genève Center. Nous vous répondrons bientôt.",
     "office": "Notre Bureau",
     "address": "Rue de Varembé 1, 1202 Genève, Suisse"
   }

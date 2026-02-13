@@ -9,7 +9,8 @@ restartPolicyType = "ON_FAILURE"
 maxRestartCount = 5
 
 [build.setup]
-nixPkgs = ["nodejs_20", "npm", "postgresql"]
+nixPkgs = ["nodejs_22", "npm", "postgresql"]
 
-[build.nixpacks]
-plan = "npm install --legacy-peer-deps && npm run build"
+[variables]
+NIXPACKS_INSTALL_CMD = "npm install --legacy-peer-deps"
+NIXPACKS_BUILD_CMD = "npm run build"

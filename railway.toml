@@ -11,6 +11,5 @@ maxRestartCount = 5
 [build.setup]
 nixPkgs = ["nodejs_20", "npm", "postgresql"]
 
-[variables]
-NIXPACKS_INSTALL_CMD = "npm install --legacy-peer-deps"
-NIXPACKS_BUILD_CMD = "npm run build"
+[build.nixpacks]
+plan = "npm install && npm run build"

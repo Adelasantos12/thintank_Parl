@@ -35,6 +35,42 @@
     "success": "Message envoyé",
     "successText": "Merci d'avoir contacté le Genève Center. Nous vous répondrons bientôt.",
     "office": "Notre Bureau",
-    "address": "Rue de Varembé 1, 1202 Genève, Suisse"
+    "address": "Rue de Varembé 1, 1202 Genève, Suisse",
+    "sendAnother": "Envoyer un autre message",
+    "nameRequired": "Le nom est requis",
+    "invalidEmail": "Adresse e-mail invalide",
+    "messageMin": "Le message doit comporter au moins 10 caractères",
+    "genericError": "Quelque chose s'est mal passé"
+  },
+  "About": {
+    "title": "À propos du Genève Center"
+  },
+  "Governance": {
+    "title": "Gouvernance"
+  },
+  "Legal": {
+    "title": "Informations Légales"
+  },
+  "Publication": {
+    "abstract": "Résumé",
+    "topics": "Sujets",
+    "regions": "Régions",
+    "citeTitle": "Citer cet ouvrage",
+    "copyCitation": "Copier la citation",
+    "noResults": "Aucune publication ne correspond à vos critères.",
+    "readMore": "Lire la suite",
+    "pdf": "PDF",
+    "search": "Rechercher",
+    "searchPlaceholder": "Mots-clés...",
+    "type": "Type",
+    "allTypes": "Tous les types",
+    "topic": "Sujet",
+    "allTopics": "Tous les sujets",
+    "region": "Région",
+    "allRegions": "Toutes les régions",
+    "year": "Année",
+    "allYears": "Toutes les années",
+    "clearFilters": "Effacer tous les filtres",
+    "contents": "Table des matières"
   }
 }

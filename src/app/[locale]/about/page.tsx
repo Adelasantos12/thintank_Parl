@@ -1,8 +1,10 @@
 import { getPayloadClient } from '@/lib/payload';
 import RichText from '@/components/RichText';
+import { getTranslations } from 'next-intl/server';
 
 export default async function StaticPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  const t = await getTranslations('About');
   const payload = await getPayloadClient();
 
   const result = await payload.find({
@@ -18,8 +20,8 @@ export default async function StaticPage({ params }: { params: Promise<{ locale:
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="max-w-3xl">
-        <h1 className="text-4xl font-serif font-bold text-navy mb-12 border-b border-border-custom pb-6">
-          {page?.title || 'About the Genève Center'}
+        <h1 className="mb-12 border-b border-border-custom pb-6">
+          {page?.title || t('title')}
         </h1>
         {page ? (
           <RichText content={page.content} />

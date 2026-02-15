@@ -1,6 +1,7 @@
 import { getPayloadClient } from '@/lib/payload';
 import PublicationFilters from '@/components/publications/PublicationFilters';
 import { Link } from '@/i18n/routing';
+import { getTranslations } from 'next-intl/server';
 
 export default async function PublicationsPage({
   params,
@@ -10,6 +11,8 @@ export default async function PublicationsPage({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const { locale } = await params;
+  const t = await getTranslations('Publication');
+  const tNav = await getTranslations('Nav');
   const resolvedSearchParams = await searchParams;
   const payload = await getPayloadClient();
 
@@ -67,11 +70,11 @@ export default async function PublicationsPage({
         {/* Results */}
         <main className="flex-grow">
           <h1 className="mb-8 border-b border-border-custom pb-4">
-            Publications
+            {tNav('publications')}
           </h1>
 
           {publications.docs.length === 0 ? (
-            <p className="text-slate italic py-12 text-center">No publications found matching your criteria.</p>
+            <p className="text-slate italic py-12 text-center">{t('noResults')}</p>
           ) : (
             <div className="space-y-12">
               {publications.docs.map((pub: any) => (
@@ -98,11 +101,11 @@ export default async function PublicationsPage({
                       </p>
                       <div className="flex items-center space-x-4">
                          <Link href={`/publications/${pub.slug}`} className="text-sm font-bold text-navy hover:underline">
-                            Read more
+                            {t('readMore')}
                          </Link>
                          {pub.pdf && (
                            <a href={typeof pub.pdf === 'object' ? pub.pdf.url : '#'} className="text-sm font-bold text-navy hover:underline flex items-center">
-                             PDF
+                             {t('pdf')}
                            </a>
                          )}
                       </div>

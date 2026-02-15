@@ -16,9 +16,9 @@ export default function Footer() {
               <Image
                 src="/images/logo/institutional.png"
                 alt="Genève Center for Parliamentary Governance"
-                width={280}
-                height={80}
-                className="h-16 w-auto object-contain mb-6"
+                width={320}
+                height={92}
+                className="h-[92px] w-auto object-contain mb-6"
               />
             </Link>
             <p className="text-slate max-w-sm mb-6 font-normal leading-relaxed">

@@ -16,9 +16,9 @@ export default function Header() {
                 <Image
                   src="/images/logo/horizontal.png"
                   alt="Genève Center for Parliamentary Governance"
-                  width={200}
-                  height={32}
-                  className="h-8 w-auto object-contain"
+                  width={240}
+                  height={36}
+                  className="h-[36px] w-auto object-contain"
                   priority
                 />
               </div>
@@ -27,9 +27,9 @@ export default function Header() {
                 <Image
                   src="/images/logo/monogram.png"
                   alt="Genève Center for Parliamentary Governance"
-                  width={32}
-                  height={32}
-                  className="h-8 w-auto object-contain"
+                  width={36}
+                  height={36}
+                  className="h-[36px] w-auto object-contain"
                   priority
                 />
               </div>

@@ -4,6 +4,7 @@ import RichText from '@/components/RichText';
 import TableOfContents from '@/components/publications/TableOfContents';
 import Citation from '@/components/publications/Citation';
 import { Link } from '@/i18n/routing';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string, slug: string }> }) {
   const { locale, slug } = await params;
@@ -35,6 +36,7 @@ export default async function PublicationDetailPage({
   params: Promise<{ locale: string, slug: string }>;
 }) {
   const { locale, slug } = await params;
+  const t = await getTranslations('Publication');
   const payload = await getPayloadClient();
 
   const result = await payload.find({
@@ -78,7 +80,7 @@ export default async function PublicationDetailPage({
           </header>
 
           <section className="bg-white p-8 border border-border-custom rounded mb-12 shadow-sm">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-navy mb-4">Abstract</h2>
+            <h2 className="text-xs font-bold uppercase tracking-widest text-navy mb-4">{t('abstract')}</h2>
             <div className="text-slate italic leading-relaxed text-[16px]">
               {pub.abstract}
             </div>
@@ -112,7 +114,7 @@ export default async function PublicationDetailPage({
             <div className="pt-8 border-t border-border-custom space-y-6">
               {pub.topics?.length > 0 && (
                 <div>
-                  <h3 className="text-[11px] font-bold uppercase text-slate tracking-widest mb-3">Topics</h3>
+                  <h3 className="text-[11px] font-bold uppercase text-slate tracking-widest mb-3">{t('topics')}</h3>
                   <div className="flex flex-wrap gap-2">
                     {pub.topics.map((topic: any) => (
                       <span key={topic.id} className="text-[11px] font-bold bg-white border border-border-custom px-2 py-1 rounded text-slate">
@@ -124,7 +126,7 @@ export default async function PublicationDetailPage({
               )}
               {pub.regions?.length > 0 && (
                 <div>
-                  <h3 className="text-[11px] font-bold uppercase text-slate tracking-widest mb-3">Regions</h3>
+                  <h3 className="text-[11px] font-bold uppercase text-slate tracking-widest mb-3">{t('regions')}</h3>
                   <div className="flex flex-wrap gap-2">
                     {pub.regions.map((region: any) => (
                       <span key={region.id} className="text-[11px] font-bold bg-white border border-border-custom px-2 py-1 rounded text-slate">

@@ -1,8 +1,10 @@
 'use client'
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Citation({ publication }: { publication: any }) {
+  const t = useTranslations('Publication');
   const [format, setFormat] = useState<'APA' | 'BibTeX'>('APA');
 
   const authorsList = publication.authors?.map((a: any) => a.name).join(', ') || 'Genève Center';
@@ -11,7 +13,7 @@ export default function Citation({ publication }: { publication: any }) {
 
   const apa = `${authorsList} (${year}). ${title}. Genève Center for Parliamentary Governance.`;
 
-  const bibtex = `@article{gipg_${publication.slug}_${year},
+  const bibtex = `@article{geneve_center_${publication.slug}_${year},
   author = {${authorsList}},
   title = {${title}},
   year = {${year}},
@@ -26,7 +28,7 @@ export default function Citation({ publication }: { publication: any }) {
   return (
     <div className="bg-background-custom p-4 rounded-md border border-border-custom">
       <div className="flex justify-between items-center mb-4">
-        <span className="text-xs font-bold uppercase text-slate tracking-widest">Cite this work</span>
+        <span className="text-xs font-bold uppercase text-slate tracking-widest">{t('citeTitle')}</span>
         <div className="flex space-x-2">
           <button
             onClick={() => setFormat('APA')}
@@ -49,7 +51,7 @@ export default function Citation({ publication }: { publication: any }) {
         onClick={() => copyToClipboard(format === 'APA' ? apa : bibtex)}
         className="text-xs font-bold text-navy hover:underline"
       >
-        Copy Citation
+        {t('copyCitation')}
       </button>
     </div>
   );

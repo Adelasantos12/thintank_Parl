@@ -35,6 +35,42 @@
     "success": "Message Sent",
     "successText": "Thank you for contacting the Genève Center. We will get back to you soon.",
     "office": "Our Office",
-    "address": "Rue de Varembé 1, 1202 Geneva, Switzerland"
+    "address": "Rue de Varembé 1, 1202 Geneva, Switzerland",
+    "sendAnother": "Send another message",
+    "nameRequired": "Name is required",
+    "invalidEmail": "Invalid email address",
+    "messageMin": "Message must be at least 10 characters",
+    "genericError": "Something went wrong"
+  },
+  "About": {
+    "title": "About the Genève Center"
+  },
+  "Governance": {
+    "title": "Governance"
+  },
+  "Legal": {
+    "title": "Legal Information"
+  },
+  "Publication": {
+    "abstract": "Abstract",
+    "topics": "Topics",
+    "regions": "Regions",
+    "citeTitle": "Cite this work",
+    "copyCitation": "Copy Citation",
+    "noResults": "No publications found matching your criteria.",
+    "readMore": "Read more",
+    "pdf": "PDF",
+    "search": "Search",
+    "searchPlaceholder": "Keywords...",
+    "type": "Type",
+    "allTypes": "All Types",
+    "topic": "Topic",
+    "allTopics": "All Topics",
+    "region": "Region",
+    "allRegions": "All Regions",
+    "year": "Year",
+    "allYears": "All Years",
+    "clearFilters": "Clear all filters",
+    "contents": "Contents"
   }
 }

@@ -51,7 +51,7 @@ export default function ContactForm() {
 
   if (status === 'success') {
     return (
-      <div className="bg-green-50 p-6 rounded-md border border-green-200 font-sans">
+      <div className="bg-green-50 p-6 rounded-none border border-green-200 font-sans">
         <h3 className="text-green-800 font-bold mb-2">{t('success')}</h3>
         <p className="text-green-700">{t('successText')}</p>
         <button onClick={() => setStatus('idle')} className="mt-4 text-green-800 underline font-medium font-sans">
@@ -71,7 +71,7 @@ export default function ContactForm() {
         <label className="block text-sm font-bold text-navy uppercase tracking-widest mb-2 font-sans">{t('name')}</label>
         <input
           {...register('name')}
-          className="w-full px-4 py-3 border border-border-custom rounded-md focus:ring-navy focus:border-navy font-sans"
+          className="w-full px-4 py-3 border border-border-custom rounded-none focus:ring-navy focus:border-navy font-sans"
         />
         {errors.name && <p className="mt-1 text-xs text-accent font-sans">{errors.name.message}</p>}
       </div>
@@ -80,7 +80,7 @@ export default function ContactForm() {
         <label className="block text-sm font-bold text-navy uppercase tracking-widest mb-2 font-sans">{t('email')}</label>
         <input
           {...register('email')}
-          className="w-full px-4 py-3 border border-border-custom rounded-md focus:ring-navy focus:border-navy font-sans"
+          className="w-full px-4 py-3 border border-border-custom rounded-none focus:ring-navy focus:border-navy font-sans"
         />
         {errors.email && <p className="mt-1 text-xs text-accent font-sans">{errors.email.message}</p>}
       </div>
@@ -90,7 +90,7 @@ export default function ContactForm() {
         <textarea
           {...register('message')}
           rows={5}
-          className="w-full px-4 py-3 border border-border-custom rounded-md focus:ring-navy focus:border-navy font-sans"
+          className="w-full px-4 py-3 border border-border-custom rounded-none focus:ring-navy focus:border-navy font-sans"
         />
         {errors.message && <p className="mt-1 text-xs text-accent font-sans">{errors.message.message}</p>}
       </div>
@@ -100,7 +100,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="w-full bg-navy text-white font-bold py-4 rounded-md hover:bg-ink transition-colors disabled:opacity-50 font-sans"
+        className="w-full bg-navy text-white font-bold py-4 rounded-none hover:bg-ink transition-colors disabled:opacity-50 font-sans"
       >
         {status === 'loading' ? t('sending') : t('send')}
       </button>

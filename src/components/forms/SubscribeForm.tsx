@@ -54,13 +54,13 @@ export default function SubscribeForm() {
           {...register('email')}
           type="email"
           placeholder="your@email.com"
-          className="flex-grow px-4 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy text-sm"
+          className="flex-grow px-4 py-2 border border-border-custom rounded-none focus:ring-navy focus:border-navy text-sm"
           required
         />
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="bg-navy text-white px-6 py-2 rounded-md hover:bg-ink text-sm font-bold transition-colors disabled:opacity-50"
+          className="bg-navy text-white px-6 py-2 rounded-none hover:bg-ink text-sm font-bold transition-colors disabled:opacity-50"
         >
           {status === 'loading' ? '...' : 'Subscribe'}
         </button>

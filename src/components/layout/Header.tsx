@@ -8,47 +8,33 @@ export default function Header() {
   return (
     <header className="border-b border-border-custom bg-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center">
-              {/* Desktop Logo */}
-              <div className="hidden md:block">
-                <Image
-                  src="/images/logo/horizontal.png"
-                  alt="Genève Center for Parliamentary Governance"
-                  width={240}
-                  height={36}
-                  className="h-[36px] w-auto object-contain"
-                  priority
-                />
-              </div>
-              {/* Mobile Logo */}
-              <div className="md:hidden">
-                <Image
-                  src="/images/logo/monogram.png"
-                  alt="Genève Center for Parliamentary Governance"
-                  width={36}
-                  height={36}
-                  className="h-[36px] w-auto object-contain"
-                  priority
-                />
-              </div>
+              <Image
+                src="/images/logo/monogram.png"
+                alt="Genève Center for Parliamentary Governance"
+                width={40}
+                height={40}
+                className="h-[40px] w-auto object-contain"
+                priority
+              />
             </Link>
           </div>
-          <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-slate hover:text-navy px-3 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
+          <nav className="hidden md:flex space-x-10">
+            <Link href="/" className="text-slate hover:text-navy px-2 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
               {t('home')}
             </Link>
-            <Link href="/publications" className="text-slate hover:text-navy px-3 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
+            <Link href="/publications" className="text-slate hover:text-navy px-2 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
               {t('publications')}
             </Link>
-            <Link href="/about" className="text-slate hover:text-navy px-3 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
+            <Link href="/about" className="text-slate hover:text-navy px-2 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
               {t('about')}
             </Link>
-            <Link href="/governance" className="text-slate hover:text-navy px-3 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
+            <Link href="/governance" className="text-slate hover:text-navy px-2 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
               {t('governance')}
             </Link>
-            <Link href="/contact" className="text-slate hover:text-navy px-3 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
+            <Link href="/contact" className="text-slate hover:text-navy px-2 py-2 font-sans font-medium text-[14px] tracking-[0.02em]">
               {t('contact')}
             </Link>
           </nav>

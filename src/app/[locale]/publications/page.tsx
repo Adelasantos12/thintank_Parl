@@ -81,7 +81,7 @@ export default async function PublicationsPage({
                 <article key={pub.id} className="group">
                   <div className="flex flex-col md:flex-row gap-6">
                     {pub.featuredImage && (
-                      <div className="w-full md:w-48 h-32 bg-background-custom rounded overflow-hidden flex-shrink-0">
+                      <div className="w-full md:w-48 h-32 bg-background-custom rounded-none overflow-hidden flex-shrink-0">
                         {/* Image would go here */}
                       </div>
                     )}

@@ -16,13 +16,13 @@ export default function HomePage() {
         <div className="flex flex-wrap gap-6">
           <Link
             href="/publications"
-            className="inline-flex items-center px-8 py-4 border border-transparent text-sm font-sans font-bold rounded shadow-sm text-white bg-navy hover:bg-ink focus:outline-none transition-colors"
+            className="inline-flex items-center px-8 py-4 border border-transparent text-sm font-sans font-bold rounded-none text-white bg-navy hover:bg-ink focus:outline-none transition-colors"
           >
             {t('explore')}
           </Link>
           <Link
             href="/about"
-            className="inline-flex items-center px-8 py-4 border border-border-custom text-sm font-sans font-bold rounded text-navy bg-white hover:bg-background-custom focus:outline-none transition-colors"
+            className="inline-flex items-center px-8 py-4 border border-border-custom text-sm font-sans font-bold rounded-none text-navy bg-white hover:bg-background-custom focus:outline-none transition-colors"
           >
             {t('learn')}
           </Link>

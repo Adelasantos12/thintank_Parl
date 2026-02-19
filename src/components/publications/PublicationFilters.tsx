@@ -14,7 +14,8 @@ export default function PublicationFilters({ types, topics, regions, years }: Fi
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const t = useTranslations('Common');
+  const tCommon = useTranslations('Common');
+  const t = useTranslations('Publication');
 
   const updateFilter = (name: string, value: string) => {
     const params = new URLSearchParams(searchParams.toString());
@@ -27,17 +28,17 @@ export default function PublicationFilters({ types, topics, regions, years }: Fi
   };
 
   return (
-    <div className="bg-white p-6 border border-border-custom rounded-lg sticky top-24">
-      <h2 className="text-lg font-bold text-navy mb-6">{t('filters')}</h2>
+    <div className="bg-white p-6 border border-border-custom rounded-lg sticky top-24 font-sans">
+      <h2 className="text-lg font-bold text-navy mb-6 font-sans">{tCommon('filters')}</h2>
 
       <div className="space-y-6">
         {/* Search */}
         <div>
-          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2">Search</label>
+          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2 font-sans">{t('search')}</label>
           <input
             type="text"
-            placeholder="Keywords..."
-            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy"
+            placeholder={t('searchPlaceholder')}
+            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy font-sans"
             onChange={(e) => updateFilter('q', e.target.value)}
             defaultValue={searchParams.get('q') || ''}
           />
@@ -45,13 +46,13 @@ export default function PublicationFilters({ types, topics, regions, years }: Fi
 
         {/* Type */}
         <div>
-          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2">Type</label>
+          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2 font-sans">{t('type')}</label>
           <select
-            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy"
+            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy font-sans"
             onChange={(e) => updateFilter('type', e.target.value)}
             value={searchParams.get('type') || ''}
           >
-            <option value="">All Types</option>
+            <option value="">{t('allTypes')}</option>
             {types.map(type => (
               <option key={type.id} value={type.id}>{type.name}</option>
             ))}
@@ -60,13 +61,13 @@ export default function PublicationFilters({ types, topics, regions, years }: Fi
 
         {/* Topic */}
         <div>
-          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2">Topic</label>
+          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2 font-sans">{t('topic')}</label>
           <select
-            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy"
+            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy font-sans"
             onChange={(e) => updateFilter('topic', e.target.value)}
             value={searchParams.get('topic') || ''}
           >
-            <option value="">All Topics</option>
+            <option value="">{t('allTopics')}</option>
             {topics.map(topic => (
               <option key={topic.id} value={topic.id}>{topic.name}</option>
             ))}
@@ -75,13 +76,13 @@ export default function PublicationFilters({ types, topics, regions, years }: Fi
 
         {/* Region */}
         <div>
-          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2">Region</label>
+          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2 font-sans">{t('region')}</label>
           <select
-            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy"
+            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy font-sans"
             onChange={(e) => updateFilter('region', e.target.value)}
             value={searchParams.get('region') || ''}
           >
-            <option value="">All Regions</option>
+            <option value="">{t('allRegions')}</option>
             {regions.map(region => (
               <option key={region.id} value={region.id}>{region.name}</option>
             ))}
@@ -90,13 +91,13 @@ export default function PublicationFilters({ types, topics, regions, years }: Fi
 
         {/* Year */}
         <div>
-          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2">Year</label>
+          <label className="block text-xs font-bold uppercase text-slate tracking-wider mb-2 font-sans">{t('year')}</label>
           <select
-            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy"
+            className="w-full px-3 py-2 border border-border-custom rounded-md focus:ring-navy focus:border-navy font-sans"
             onChange={(e) => updateFilter('year', e.target.value)}
             value={searchParams.get('year') || ''}
           >
-            <option value="">All Years</option>
+            <option value="">{t('allYears')}</option>
             {years.map(year => (
               <option key={year} value={year.toString()}>{year}</option>
             ))}
@@ -105,9 +106,9 @@ export default function PublicationFilters({ types, topics, regions, years }: Fi
 
         <button
           onClick={() => router.push(pathname)}
-          className="text-sm text-accent hover:underline font-medium"
+          className="text-sm text-accent hover:underline font-medium font-sans"
         >
-          Clear all filters
+          {t('clearFilters')}
         </button>
       </div>
     </div>

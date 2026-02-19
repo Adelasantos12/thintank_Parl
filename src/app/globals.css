@@ -32,10 +32,10 @@
   --color-background-custom: #F8FAFC;
   --color-accent: #8B1E2D;
 
-  --font-heading: "TT Rationalist", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "TT Rationalist", var(--font-montserrat), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-source-serif), ui-serif, Georgia, serif;
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-montserrat), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
 }
 
@@ -62,11 +62,11 @@ body {
   }
 
   h2 {
-    @apply font-heading font-normal text-[30px] leading-[1.2] text-navy;
+    @apply font-heading font-medium text-[30px] leading-[1.2] text-navy;
   }
 
   h3, h4 {
-    @apply font-heading font-normal text-[22px] leading-tight text-navy;
+    @apply font-heading font-medium text-[22px] leading-tight text-navy;
   }
 
   .subtitle {

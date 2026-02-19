@@ -1,7 +1,15 @@
 {
   "Index": {
-    "title": "Instituto de Ginebra para la Gobernanza Parlamentaria",
-    "description": "Excelencia en la gobernanza parlamentaria."
+    "title": "Genève Center for Parliamentary Governance",
+    "description": "Excelencia en la gobernanza parlamentaria.",
+    "explore": "Explorar publicaciones",
+    "learn": "Sobre nosotros",
+    "researchTitle": "Investigación",
+    "researchText": "Nuestros investigadores proporcionan un análisis profundo de las tendencias parlamentarias y los modelos de gobernanza.",
+    "advisoryTitle": "Asesoría",
+    "advisoryText": "Orientación experta para parlamentos que buscan modernizar sus estructuras.",
+    "networkTitle": "Red Global",
+    "networkText": "Conectando a profesionales y académicos de todo el mundo."
   },
   "Nav": {
     "home": "Inicio",
@@ -15,5 +23,54 @@
     "downloadPDF": "Descargar PDF",
     "cite": "Citar",
     "filters": "Filtros"
+  },
+  "Contact": {
+    "title": "Contáctenos",
+    "description": "¿Tiene preguntas sobre nuestra investigación o está interesado en colaborar?",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado",
+    "successText": "Gracias por contactar al Genève Center. Nos pondremos en contacto pronto.",
+    "office": "Nuestra oficina",
+    "address": "Rue de Varembé 1, 1202 Ginebra, Suiza",
+    "sendAnother": "Enviar otro mensaje",
+    "nameRequired": "Nombre es requerido",
+    "invalidEmail": "Correo electrónico inválido",
+    "messageMin": "El mensaje debe tener al menos 10 caracteres",
+    "genericError": "Algo salió mal"
+  },
+  "About": {
+    "title": "Sobre el Genève Center"
+  },
+  "Governance": {
+    "title": "Gobernanza"
+  },
+  "Legal": {
+    "title": "Información Legal"
+  },
+  "Publication": {
+    "abstract": "Resumen",
+    "topics": "Temas",
+    "regions": "Regiones",
+    "citeTitle": "Citar este trabajo",
+    "copyCitation": "Copiar cita",
+    "noResults": "No se encontraron publicaciones que coincidan con sus criterios.",
+    "readMore": "Leer más",
+    "pdf": "PDF",
+    "search": "Buscar",
+    "searchPlaceholder": "Palabras clave...",
+    "type": "Tipo",
+    "allTypes": "Todos los tipos",
+    "topic": "Tema",
+    "allTopics": "Todos los temas",
+    "region": "Región",
+    "allRegions": "Todas las regiones",
+    "year": "Año",
+    "allYears": "Todos los años",
+    "clearFilters": "Borrar todos los filtros",
+    "contents": "Contenidos"
   }
 }

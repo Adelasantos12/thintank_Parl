@@ -2,16 +2,20 @@
 > gipg-web@0.1.0 dev
 > next dev
 
-⚠ Port 3000 is in use by an unknown process, using available port 3001 instead.
-⚠ `eslint` configuration in next.config.ts is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
-⚠ Invalid next.config.ts options detected:
-⚠     Unrecognized key(s) in object: 'eslint'
-⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
-▲ Next.js 16.1.6 (Turbopack)
-- Local:         http://localhost:3001
-- Network:       http://192.168.0.2:3001
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.2:3000
 
-✓ Starting...
-⨯ Unable to acquire lock at /app/.next/dev/lock, is another instance of next dev running?
-  Suggestion: If you intended to restart next dev, terminate the other process, and then try again.
-[?25h
+ ✓ Starting...
+ ✓ Ready in 2.1s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1550ms (225 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 9.3s (887 modules)
+ GET /en 200 in 12713ms
+ GET /en 200 in 502ms
+ GET /en 200 in 227ms
+ GET /en 200 in 253ms
+ ✓ Compiled in 637ms (869 modules)
+ GET /en 200 in 619ms
+ GET /en 200 in 310ms

@@ -38,20 +38,14 @@ export default function HomePage() {
     <div className="space-y-24 py-12 sm:py-16">
       {/* 1. HERO SECTION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-        <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F2537]/5 border border-[#0F2537]/10 mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#8B261D] animate-pulse"></span>
-            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0F2537]">
-              Genève Think Tank for Parliamentary Governance
-            </span>
-          </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight text-[#0F2537] mb-6 leading-[1.08]">
-            Strengthening parliamentary governance worldwide
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight text-[#0F2537] mb-4 leading-[1.08]">
+            Genève Centre for Parliamentary Governance
           </h1>
-          <p className="text-lg sm:text-xl text-slate-600 font-sans font-normal leading-relaxed mb-10 max-w-3xl">
-            Independent research, comparative analysis and capacity-building for legislatures committed to transparency, accountability and democratic representation.
-          </p>
-          <div className="flex flex-wrap items-center gap-4 mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-[#8B261D] mb-8">
+            Strengthening parliamentary governance worldwide
+          </h2>
+          <div className="flex flex-wrap justify-center items-center gap-4 mb-8">
             <Link
               href="/publications"
               className="px-7 py-4 bg-[#0F2537] text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md hover:bg-[#1A3650] hover:shadow-lg transition-all transform hover:-translate-y-0.5"
@@ -65,6 +59,9 @@ export default function HomePage() {
               About GCPG
             </Link>
           </div>
+          <p className="text-sm sm:text-base text-slate-600 font-sans font-normal leading-relaxed max-w-2xl mx-auto mb-16">
+            Independent research, comparative analysis and capacity-building for legislatures committed to transparency, accountability and democratic representation.
+          </p>
 
           {/* Apple-style Key Metrics Bar */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-slate-200/80">
@@ -173,11 +170,11 @@ export default function HomePage() {
       <section className="bg-[#0F2537] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
-            <div className="flex items-center gap-3 mb-2">
-              <span className="text-xs font-extrabold uppercase tracking-widest text-[#8B261D] bg-white/10 px-2 py-0.5 rounded">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-xs font-extrabold uppercase tracking-widest bg-[#8B261D] text-white px-3 py-1 rounded-md shadow-sm">
                 WORK AREAS
               </span>
-              <span className="text-xs text-slate-400 font-mono">• Preview</span>
+              <span className="text-xs text-slate-200 font-mono font-bold">• Preview</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-white mb-4">
               Four lines, one purpose

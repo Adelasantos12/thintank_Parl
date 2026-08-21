@@ -11,15 +11,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-[14px]">
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
-              <div className="bg-white px-6 py-5 rounded-2xl inline-block shadow-lg max-w-md w-full">
-                <Image
-                  src="/images/GCPG_-05.png"
-                  alt="GCPG - Genève Centre for Parliamentary Governance Logo"
-                  width={600}
-                  height={200}
-                  className="w-full h-auto object-contain max-h-36"
-                />
-              </div>
+              <Image
+                src="/images/gcpg-footer-white-v2.png"
+                alt="GCPG - Genève Centre for Parliamentary Governance Logo"
+                width={300}
+                height={64}
+                className="h-12 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
+              />
             </div>
             <p className="text-slate-300 max-w-sm mb-8 leading-relaxed font-light">
               Genève Center for Parliamentary Governance / Centre de Genève pour la Gouvernance Parlementaire.

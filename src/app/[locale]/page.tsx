@@ -37,27 +37,49 @@ export default function HomePage() {
   return (
     <div className="space-y-24 py-12 sm:py-16">
       {/* 1. HERO SECTION */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
         <div className="max-w-4xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-extrabold tracking-tight text-black mb-6 leading-[1.1]">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F2537]/5 border border-[#0F2537]/10 mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#8B261D] animate-pulse"></span>
+            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0F2537]">
+              Genève Think Tank for Parliamentary Governance
+            </span>
+          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight text-[#0F2537] mb-6 leading-[1.08]">
             Strengthening parliamentary governance worldwide
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 font-sans font-normal leading-relaxed mb-10 max-w-3xl">
             Independent research, comparative analysis and capacity-building for legislatures committed to transparency, accountability and democratic representation.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap items-center gap-4 mb-16">
             <Link
               href="/publications"
-              className="px-6 py-3.5 bg-[#0F2537] text-white text-xs font-bold uppercase tracking-wider rounded shadow-sm hover:bg-[#1A3650] transition-all"
+              className="px-7 py-4 bg-[#0F2537] text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md hover:bg-[#1A3650] hover:shadow-lg transition-all transform hover:-translate-y-0.5"
             >
-              Explore Publications
+              Explore Publications &rarr;
             </Link>
             <Link
               href="/about"
-              className="px-6 py-3.5 border-2 border-[#8B261D] text-[#8B261D] text-xs font-bold uppercase tracking-wider rounded hover:bg-[#FDF2F2] transition-all"
+              className="px-7 py-4 border-2 border-[#8B261D] text-[#8B261D] text-xs font-bold uppercase tracking-wider rounded-lg hover:bg-[#8B261D] hover:text-white transition-all transform hover:-translate-y-0.5"
             >
               About GCPG
             </Link>
+          </div>
+
+          {/* Apple-style Key Metrics Bar */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-slate-200/80">
+            <div>
+              <div className="text-2xl font-heading font-extrabold text-[#0F2537]">Geneva, CH</div>
+              <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">International Centre</div>
+            </div>
+            <div>
+              <div className="text-2xl font-heading font-extrabold text-[#8B261D]">Comparative</div>
+              <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Legislative Research</div>
+            </div>
+            <div>
+              <div className="text-2xl font-heading font-extrabold text-[#0F2537]">Global Impact</div>
+              <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Capacity Building</div>
+            </div>
           </div>
         </div>
       </section>

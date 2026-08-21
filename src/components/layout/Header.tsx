@@ -6,17 +6,17 @@ export default function Header() {
   const t = useTranslations('Nav');
 
   return (
-    <header className="border-b border-border-custom bg-white sticky top-0 z-50">
+    <header className="border-b border-slate-200/80 apple-glass sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3 group">
               <Image
                 src="/images/logo-horizontal.png"
                 alt="GCPG - Genève Center for Parliamentary Governance"
                 width={320}
                 height={70}
-                className="h-12 sm:h-14 w-auto object-contain"
+                className="h-11 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                 priority
               />
             </Link>

@@ -1,12 +1,21 @@
 {
   "Index": {
-    "title": "Instituto de Ginebra para la Gobernanza Parlamentaria",
-    "description": "Excelencia en la gobernanza parlamentaria."
+    "title": "Centro de Ginebra para la Gobernanza Parlamentaria",
+    "description": "Fortaleciendo las instituciones parlamentarias mediante la investigación, la capacitación y la gobernanza basada en evidencia.",
+    "explore": "Explorar publicaciones",
+    "learn": "Acerca del GCPG",
+    "researchTitle": "Investigación y Análisis",
+    "researchText": "Investigación independiente, no partidista y basada en evidencia sobre procesos legislativos y resiliencia institucional.",
+    "advisoryTitle": "Capacitación y Formación",
+    "advisoryText": "Programas de formación, fortalecimiento de capacidades y aprendizaje institucional para parlamentarios y funcionarios.",
+    "networkTitle": "Hub de Gobernanza en Ginebra",
+    "networkText": "Plataforma de diálogo que conecta legisladores, investigadores, autoridades públicas y actores internacionales desde Ginebra."
   },
   "Nav": {
     "home": "Inicio",
     "publications": "Publicaciones",
     "about": "Acerca de",
+    "objectives": "Objetivos y Medios",
     "governance": "Gobernanza",
     "contact": "Contacto"
   },
@@ -14,6 +23,20 @@
     "readMore": "Leer más",
     "downloadPDF": "Descargar PDF",
     "cite": "Citar",
-    "filters": "Filtros"
+    "filters": "Filtros",
+    "linkedinPost": "Ver en LinkedIn"
+  },
+  "Contact": {
+    "title": "Contáctenos",
+    "description": "¿Tiene preguntas sobre nuestras investigaciones o le interesa colaborar? Complete el siguiente formulario.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado",
+    "successText": "Gracias por contactar al GCPG. Le responderemos a la brevedad.",
+    "office": "Nuestra Oficina",
+    "address": "Cantón de Ginebra, Suiza"
   }
 }

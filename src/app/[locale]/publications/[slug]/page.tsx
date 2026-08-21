@@ -87,6 +87,26 @@ export default async function PublicationDetailPage({
           <div className="publication-content">
             <RichText content={pub.content} />
           </div>
+
+          {/* LinkedIn Embed/Link Card if present */}
+          {pub.linkedinPostUrl && (
+            <div className="mt-12 p-6 sketch-box bg-white">
+              <h3 className="text-sm font-bold uppercase tracking-wider text-navy mb-2 flex items-center gap-2">
+                LinkedIn Discussion & Updates
+              </h3>
+              <p className="text-sm text-slate mb-4">
+                Join the conversation and view updates regarding this publication on LinkedIn.
+              </p>
+              <a
+                href={pub.linkedinPostUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-navy hover:text-accent border-b border-navy hover:border-accent pb-0.5 transition-colors"
+              >
+                Open LinkedIn Post &rarr;
+              </a>
+            </div>
+          )}
         </article>
 
         {/* Right Rail (Sticky) */}
@@ -96,9 +116,23 @@ export default async function PublicationDetailPage({
             {pub.pdf && (
               <a
                 href={typeof pub.pdf === 'object' ? pub.pdf.url : '#'}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent text-sm font-bold rounded shadow-sm text-white bg-navy hover:bg-ink focus:outline-none transition-colors"
               >
-                Download PDF
+                Download PDF Document
+              </a>
+            )}
+
+            {/* LinkedIn Post Link Button if present */}
+            {pub.linkedinPostUrl && (
+              <a
+                href={pub.linkedinPostUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex justify-center items-center px-6 py-3 border border-border-custom text-sm font-bold rounded shadow-sm text-navy bg-white hover:bg-background-custom focus:outline-none transition-colors"
+              >
+                LinkedIn Post
               </a>
             )}
 

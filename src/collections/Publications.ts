@@ -75,6 +75,13 @@ export const Publications: CollectionConfig = {
       },
     },
     {
+      name: 'linkedinPostUrl',
+      type: 'text',
+      admin: {
+        description: 'URL of the associated LinkedIn post or article (e.g. https://www.linkedin.com/posts/... or embed URL)',
+      },
+    },
+    {
       name: 'featuredImage',
       type: 'upload',
       relationTo: 'media',

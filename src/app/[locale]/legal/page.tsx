@@ -5,15 +5,21 @@ export default async function LegalPage({ params }: { params: Promise<{ locale: 
   const { locale } = await params;
   const payload = await getPayloadClient();
 
-  const result = await payload.find({
-    collection: 'pages',
-    locale: locale as any,
-    where: {
-      slug: { equals: 'legal' }
+  let page = null;
+  if (payload) {
+    try {
+      const result = await payload.find({
+        collection: 'pages',
+        locale: locale as any,
+        where: {
+          slug: { equals: 'legal' }
+        }
+      });
+      page = result.docs[0];
+    } catch {
+      page = null;
     }
-  });
-
-  const page = result.docs[0];
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">

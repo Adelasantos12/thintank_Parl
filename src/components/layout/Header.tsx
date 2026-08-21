@@ -1,5 +1,6 @@
 import {Link} from '@/i18n/routing';
 import {useTranslations} from 'next-intl';
+import Image from 'next/image';
 
 export default function Header() {
   const t = useTranslations('Nav');
@@ -7,40 +8,51 @@ export default function Header() {
   return (
     <header className="border-b border-border-custom bg-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0 flex items-center space-x-3">
-            <Link href="/" className="font-heading font-extrabold text-xl tracking-tight text-navy flex items-center gap-2">
-              <span className="border-b-2 border-accent pb-0.5">GCPG</span>
+        <div className="flex justify-between items-center h-20">
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/images/logo-horizontal.png"
+                alt="GCPG - Genève Center for Parliamentary Governance"
+                width={320}
+                height={70}
+                className="h-12 sm:h-14 w-auto object-contain"
+                priority
+              />
             </Link>
-            <span className="hidden lg:inline-block text-xs text-slate border-l border-border-custom pl-3 font-serif italic">
-              Geneva Center for Parliamentary Governance
-            </span>
           </div>
-          <nav className="hidden md:flex space-x-6">
-            <Link href="/" className="text-slate hover:text-navy px-2 py-2 font-heading font-normal text-[14px] tracking-[0.02em]">
-              {t('home')}
+
+          <nav className="hidden lg:flex items-center space-x-8">
+            <Link href="/about" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+              About us
             </Link>
-            <Link href="/about" className="text-slate hover:text-navy px-2 py-2 font-heading font-normal text-[14px] tracking-[0.02em]">
-              {t('about')}
+            <Link href="/work-areas" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+              Work areas
             </Link>
-            <Link href="/objectives" className="text-slate hover:text-navy px-2 py-2 font-heading font-normal text-[14px] tracking-[0.02em]">
-              {t('objectives')}
+            <Link href="/publications" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+              Publications
             </Link>
-            <Link href="/governance" className="text-slate hover:text-navy px-2 py-2 font-heading font-normal text-[14px] tracking-[0.02em]">
-              {t('governance')}
+            <Link href="/training" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+              Training
             </Link>
-            <Link href="/publications" className="text-slate hover:text-navy px-2 py-2 font-heading font-normal text-[14px] tracking-[0.02em]">
-              {t('publications')}
+            <Link href="/news" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+              News
             </Link>
-            <Link href="/contact" className="text-slate hover:text-navy px-2 py-2 font-heading font-normal text-[14px] tracking-[0.02em]">
-              {t('contact')}
+            <Link href="/events" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+              Events
+            </Link>
+            <Link href="/contact" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+              Contact
             </Link>
           </nav>
+
           <div className="flex items-center space-x-4">
-            <div className="flex space-x-2 text-[11px] font-bold text-slate">
-              <Link href="/" locale="en" className="hover:text-navy uppercase px-1 py-0.5 rounded hover:bg-background-custom">EN</Link>
-              <Link href="/" locale="fr" className="hover:text-navy uppercase px-1 py-0.5 rounded hover:bg-background-custom">FR</Link>
-              <Link href="/" locale="es" className="hover:text-navy uppercase px-1 py-0.5 rounded hover:bg-background-custom">ES</Link>
+            <div className="flex space-x-2 text-[12px] font-semibold text-slate-700">
+              <Link href="/" locale="en" className="hover:text-black uppercase px-2 py-1 rounded hover:bg-slate-100 transition-colors">EN</Link>
+              <span className="text-slate-300">|</span>
+              <Link href="/" locale="fr" className="hover:text-black uppercase px-2 py-1 rounded hover:bg-slate-100 transition-colors">FR</Link>
+              <span className="text-slate-300">|</span>
+              <Link href="/" locale="es" className="hover:text-black uppercase px-2 py-1 rounded hover:bg-slate-100 transition-colors">ES</Link>
             </div>
           </div>
         </div>

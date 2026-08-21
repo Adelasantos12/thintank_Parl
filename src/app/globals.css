@@ -25,93 +25,77 @@
 }
 
 @theme {
-  --color-ink: #0B1220;
-  --color-navy: #0F2A4A;
-  --color-slate: #475569;
+  --color-ink: #000000;
+  --color-navy: #000000;
+  --color-slate: #4A5568;
   --color-border-custom: #E2E8F0;
-  --color-background-custom: #F8FAFC;
-  --color-accent: #8B1E2D;
+  --color-background-custom: #FAFAFA;
+  --color-accent: #B3B3B3;
 
   --font-heading: "TT Rationalist", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-body: var(--font-source-serif), ui-serif, Georgia, serif;
+  --font-body: "Montserrat", var(--font-source-serif), ui-sans-serif, system-ui, sans-serif;
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Montserrat", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
 }
 
 :root {
-  --background: #FAFAF7;
-  --foreground: #0B1220;
+  --background: #FFFFFF;
+  --foreground: #000000;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-body);
-  font-size: 17px;
-  line-height: 1.675;
+  font-family: 'Montserrat', sans-serif, system-ui;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Fountain pen / hand-drawn aesthetic utilities */
-.pen-underline {
-  position: relative;
-  display: inline-block;
-}
-
-.pen-underline::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: var(--color-accent);
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  opacity: 0.85;
-}
-
-.sketch-box {
-  border: 2px solid #0F2A4A;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  box-shadow: 2px 3px 0px rgba(15, 42, 74, 0.15);
+.modern-card {
   background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
 }
 
-.pen-divider {
-  border: none;
-  height: 2px;
-  background: radial-gradient(circle, #0F2A4A 0%, rgba(15,42,74,0.2) 80%, transparent 100%);
-  margin: 2rem 0;
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+.modern-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
 }
 
-.pen-quote {
-  border-left: 3px solid #8B1E2D;
-  padding-left: 1.25rem;
-  font-style: italic;
-  position: relative;
-  background: rgba(248, 250, 252, 0.6);
-  border-radius: 0 8px 8px 0;
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #F1F5F9;
+  color: #334155;
 }
 
 @layer base {
   html {
-    @apply antialiased text-ink;
+    @apply antialiased text-black;
   }
 
   h1 {
-    @apply font-heading font-extrabold text-[42px] leading-[1.125] tracking-[-0.01em] text-navy;
+    @apply font-heading font-extrabold text-[36px] sm:text-[46px] leading-[1.1] tracking-tight text-black;
   }
 
   h2 {
-    @apply font-heading font-normal text-[30px] leading-[1.2] text-navy;
+    @apply font-heading font-bold text-[28px] sm:text-[34px] leading-[1.2] text-black;
   }
 
   h3, h4 {
-    @apply font-heading font-normal text-[22px] leading-tight text-navy;
+    @apply font-heading font-semibold text-[20px] sm:text-[24px] leading-tight text-black;
   }
 
   .subtitle {
-    @apply font-heading font-light text-[17px] leading-[1.4] text-slate;
+    @apply font-sans font-normal text-[16px] sm:text-[18px] leading-[1.5] text-slate-600;
   }
 }

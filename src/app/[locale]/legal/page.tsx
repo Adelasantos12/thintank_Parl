@@ -32,7 +32,7 @@ export default async function LegalPage({ params }: { params: Promise<{ locale: 
             </p>
             <h2 className="text-xl font-bold text-navy mt-12 mb-4">Terms of Service</h2>
             <p className="text-slate leading-relaxed">
-              All publications and research content are the property of GIPG unless otherwise stated.
+              All publications and research content are the property of GCPG unless otherwise stated.
             </p>
           </div>
         )}

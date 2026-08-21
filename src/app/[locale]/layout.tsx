@@ -22,22 +22,22 @@ const sourceSerif = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | GIPG',
-    default: 'Geneva Institute for Parliamentary Governance (GIPG)',
+    template: '%s | GCPG',
+    default: 'Genève Center for Parliamentary Governance (GCPG)',
   },
-  description: "Swiss institute dedicated to parliamentary governance and excellence.",
+  description: "Independent think tank devoted to the comparative study of parliaments, legislative procedure and the quality of law-making.",
   openGraph: {
-    title: 'GIPG',
-    description: 'Swiss institute dedicated to parliamentary governance and excellence.',
-    url: 'https://gipg.ch',
-    siteName: 'GIPG',
+    title: 'GCPG',
+    description: 'Independent think tank devoted to the comparative study of parliaments, legislative procedure and the quality of law-making.',
+    url: 'https://gcpg.ch',
+    siteName: 'GCPG',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GIPG',
-    description: 'Swiss institute dedicated to parliamentary governance and excellence.',
+    title: 'GCPG',
+    description: 'Independent think tank devoted to the comparative study of parliaments, legislative procedure and the quality of law-making.',
   },
 };
 

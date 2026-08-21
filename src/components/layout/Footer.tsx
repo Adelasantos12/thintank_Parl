@@ -1,49 +1,57 @@
 import {Link} from '@/i18n/routing';
-import {useTranslations} from 'next-intl';
+import Image from 'next/image';
 import SubscribeForm from '../forms/SubscribeForm';
 
 export default function Footer() {
-  const t = useTranslations('Nav');
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-border-custom mt-auto font-heading">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-[14px]">
+    <footer className="bg-[#0F2537] text-white mt-auto font-sans border-t-2 border-[#8B261D]">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-[14px]">
           <div className="col-span-1 md:col-span-2">
-            <h2 className="text-navy font-extrabold text-lg mb-2">GCPG</h2>
-            <p className="text-slate max-w-sm mb-6 font-light leading-relaxed">
-              Geneva Center for Parliamentary Governance / Centre de Genève pour la Gouvernance Parlementaire.
-              An independent, non-profit association governed by Art. 60 et seq. of the Swiss Civil Code, based in Geneva, Switzerland.
+            <div className="mb-6">
+              <Image
+                src="/images/logo-horizontal.png"
+                alt="GCPG Logo"
+                width={220}
+                height={45}
+                className="brightness-0 invert h-9 w-auto object-contain"
+              />
+            </div>
+            <p className="text-slate-300 max-w-sm mb-8 leading-relaxed font-light">
+              Genève Center for Parliamentary Governance / Centre de Genève pour la Gouvernance Parlementaire.
+              An independent, non-profit think tank based in Geneva, Switzerland.
             </p>
             <div className="max-w-sm">
-              <h4 className="text-[11px] font-bold uppercase tracking-widest text-navy mb-2">Newsletter</h4>
-              <p className="text-[12px] text-slate mb-4 font-light">Stay informed about our latest research, training, and events.</p>
+              <h4 className="text-[12px] font-bold uppercase tracking-wider text-[#8B261D] bg-white/10 px-2.5 py-1 rounded inline-block mb-3">Subscribe to News &amp; Briefs</h4>
+              <p className="text-[13px] text-slate-300 mb-4 font-light">Stay informed about our latest research, comparative studies, and executive training.</p>
               <SubscribeForm />
             </div>
           </div>
           <div>
-            <h3 className="text-navy font-normal uppercase tracking-wider mb-4">Navigation</h3>
-            <ul className="space-y-2 font-light">
-              <li><Link href="/" className="text-slate hover:text-navy transition-colors">{t('home')}</Link></li>
-              <li><Link href="/about" className="text-slate hover:text-navy transition-colors">{t('about')}</Link></li>
-              <li><Link href="/objectives" className="text-slate hover:text-navy transition-colors">{t('objectives')}</Link></li>
-              <li><Link href="/governance" className="text-slate hover:text-navy transition-colors">{t('governance')}</Link></li>
-              <li><Link href="/publications" className="text-slate hover:text-navy transition-colors">{t('publications')}</Link></li>
-              <li><Link href="/contact" className="text-slate hover:text-navy transition-colors">{t('contact')}</Link></li>
+            <h3 className="text-[#8B261D] font-extrabold uppercase text-[12px] tracking-wider mb-5 border-b border-white/10 pb-2">Sections</h3>
+            <ul className="space-y-2.5 font-medium text-slate-200">
+              <li><Link href="/about" className="hover:text-[#F87171] transition-colors">About us</Link></li>
+              <li><Link href="/work-areas" className="hover:text-[#F87171] transition-colors">Work areas</Link></li>
+              <li><Link href="/publications" className="hover:text-[#F87171] transition-colors">Publications</Link></li>
+              <li><Link href="/training" className="hover:text-[#F87171] transition-colors">Training</Link></li>
+              <li><Link href="/news" className="hover:text-[#F87171] transition-colors">News</Link></li>
+              <li><Link href="/events" className="hover:text-[#F87171] transition-colors">Events</Link></li>
+              <li><Link href="/contact" className="hover:text-[#F87171] transition-colors">Contact</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-navy font-normal uppercase tracking-wider mb-4">Legal & Information</h3>
-            <ul className="space-y-2 font-light">
-              <li><Link href="/about" className="text-slate hover:text-navy transition-colors">Statutes & Legal Framework</Link></li>
-              <li><Link href="/legal" className="text-slate hover:text-navy transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/legal" className="text-slate hover:text-navy transition-colors">Terms of Service</Link></li>
+            <h3 className="text-[#8B261D] font-extrabold uppercase text-[12px] tracking-wider mb-5 border-b border-white/10 pb-2">Legal &amp; Information</h3>
+            <ul className="space-y-2.5 font-medium text-slate-200">
+              <li><Link href="/about" className="hover:text-[#F87171] transition-colors">Statutes &amp; Legal Framework</Link></li>
+              <li><Link href="/legal" className="hover:text-[#F87171] transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/legal" className="hover:text-[#F87171] transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-border-custom pt-8 flex flex-col md:flex-row justify-between items-center text-slate text-[12px] font-light">
-          <p>&copy; {year} GCPG — Geneva Center for Parliamentary Governance. Canton of Geneva, Switzerland.</p>
+        <div className="mt-12 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-300 text-[13px]">
+          <p>&copy; {year} GCPG — Genève Center for Parliamentary Governance. Canton of Geneva, Switzerland.</p>
         </div>
       </div>
     </footer>

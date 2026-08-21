@@ -6,6 +6,7 @@ export const Media: CollectionConfig = {
     staticDir: 'public/media',
     adminThumbnail: 'thumbnail',
     mimeTypes: ['image/*', 'application/pdf'],
+    clientDrawers: true,
   },
   access: {
     read: () => true,

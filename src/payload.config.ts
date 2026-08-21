@@ -26,13 +26,14 @@ export default buildConfig({
   collections: [Users, Topics, Regions, PublicationTypes, Authors, Media, Pages, Publications],
   globals: [Settings],
   editor: lexicalEditor({}),
-  secret: process.env.PAYLOAD_SECRET || 'YOUR_SECRET_HERE',
+  secret: process.env.PAYLOAD_SECRET || 'fallback-secret-for-build-and-dev-only',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URI || process.env.DATABASE_URL || '',
+      ssl: process.env.DATABASE_URI || process.env.DATABASE_URL ? { rejectUnauthorized: false } : false,
     },
   }),
   localization: {

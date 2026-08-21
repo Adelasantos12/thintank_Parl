@@ -40,7 +40,7 @@
 }
 
 :root {
-  --background: #F8FAFC;
+  --background: #FAFAF7;
   --foreground: #0B1220;
 }
 
@@ -50,6 +50,48 @@ body {
   font-family: var(--font-body);
   font-size: 17px;
   line-height: 1.675;
+}
+
+/* Fountain pen / hand-drawn aesthetic utilities */
+.pen-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.pen-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  opacity: 0.85;
+}
+
+.sketch-box {
+  border: 2px solid #0F2A4A;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 2px 3px 0px rgba(15, 42, 74, 0.15);
+  background-color: #FFFFFF;
+}
+
+.pen-divider {
+  border: none;
+  height: 2px;
+  background: radial-gradient(circle, #0F2A4A 0%, rgba(15,42,74,0.2) 80%, transparent 100%);
+  margin: 2rem 0;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.pen-quote {
+  border-left: 3px solid #8B1E2D;
+  padding-left: 1.25rem;
+  font-style: italic;
+  position: relative;
+  background: rgba(248, 250, 252, 0.6);
+  border-radius: 0 8px 8px 0;
 }
 
 @layer base {

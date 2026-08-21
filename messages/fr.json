@@ -1,20 +1,21 @@
 {
   "Index": {
-    "title": "Institut de Genève pour la Gouvernance Parlementaire",
-    "description": "Excellence dans la gouvernance parlementaire.",
+    "title": "Centre de Genève pour la Gouvernance Parlementaire",
+    "description": "Renforcer les institutions parlementaires par la recherche, la formation et une gouvernance fondée sur des données probantes.",
     "explore": "Explorer les publications",
-    "learn": "À propos de nous",
-    "researchTitle": "Recherche",
-    "researchText": "Nos chercheurs analysent les tendances parlementaires et les modèles de gouvernance pour éclairer la prise de décision.",
-    "advisoryTitle": "Conseil",
-    "advisoryText": "Conseils d'experts aux parlements souhaitant moderniser leurs structures et améliorer l'efficacité législative.",
-    "networkTitle": "Réseau Mondial",
-    "networkText": "Connecter praticiens et universitaires du monde entier pour partager les meilleures pratiques de gouvernance démocratique."
+    "learn": "À propos du GCPG",
+    "researchTitle": "Recherche & Analyse",
+    "researchText": "Recherche indépendante, non partisane et fondée sur des données probantes sur les processus législatifs et la résilience institutionnelle.",
+    "advisoryTitle": "Formation & Renforcement",
+    "advisoryText": "Programmes de formation, renforcement des capacités et transfert de connaissances pour parlementaires et fonctionnaires.",
+    "networkTitle": "Pôle de Gouvernance de Genève",
+    "networkText": "Plateforme de dialogue reliant parlementaires, chercheur·euse·s, autorités publiques et acteurs internationaux depuis Genève."
   },
   "Nav": {
     "home": "Accueil",
     "publications": "Publications",
     "about": "À propos",
+    "objectives": "But & Moyens",
     "governance": "Gouvernance",
     "contact": "Contact"
   },
@@ -22,19 +23,20 @@
     "readMore": "Lire la suite",
     "downloadPDF": "Télécharger le PDF",
     "cite": "Citer",
-    "filters": "Filtres"
+    "filters": "Filtres",
+    "linkedinPost": "Voir sur LinkedIn"
   },
   "Contact": {
     "title": "Contactez-nous",
-    "description": "Des questions sur nos recherches ou envie de collaborer ? Remplissez le formulaire ci-dessous.",
+    "description": "Des questions sur nos travaux ou envie de collaborer ? Remplissez le formulaire ci-dessous.",
     "name": "Nom",
     "email": "E-mail",
     "message": "Message",
     "send": "Envoyer le message",
     "sending": "Envoi...",
     "success": "Message envoyé",
-    "successText": "Merci d'avoir contacté le GIPG. Nous vous répondrons bientôt.",
+    "successText": "Merci d'avoir contacté le GCPG. Nous vous répondrons bientôt.",
     "office": "Notre Bureau",
-    "address": "Rue de Varembé 1, 1202 Genève, Suisse"
+    "address": "Canton de Genève, Suisse"
   }
 }

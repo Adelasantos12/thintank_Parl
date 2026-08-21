@@ -11,13 +11,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-[14px]">
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
-              <div className="bg-white px-3.5 py-2.5 rounded-lg inline-block shadow-sm">
+              <div className="bg-white/95 backdrop-blur px-4 py-3 rounded-xl inline-block shadow-md">
                 <Image
                   src="/images/logo-horizontal.png"
                   alt="GCPG - Genève Centre for Parliamentary Governance Logo"
-                  width={240}
-                  height={50}
-                  className="h-10 w-auto object-contain"
+                  width={300}
+                  height={70}
+                  className="h-12 sm:h-14 w-auto object-contain"
                 />
               </div>
             </div>

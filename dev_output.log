@@ -19,3 +19,385 @@
  ✓ Compiled in 637ms (869 modules)
  GET /en 200 in 619ms
  GET /en 200 in 310ms
+ ✓ Compiled in 5.1s (869 modules)
+ ✓ Compiled in 783ms (869 modules)
+ ✓ Compiled in 220ms (313 modules)
+ ✓ Compiled in 198ms (313 modules)
+ ✓ Compiled in 285ms (313 modules)
+ ✓ Compiled in 870ms (313 modules)
+ ✓ Compiled in 346ms (313 modules)
+ ○ Compiling /[locale]/legal ...
+ ✓ Compiled /[locale]/legal in 958ms (861 modules)
+ ⨯ [Error: Cannot find module './vendor-chunks/next.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/[locale]/legal/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/server/dev/static-paths-worker.js
+- /app/node_modules/next/dist/compiled/jest-worker/processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 3.6s (1208 modules)
+ GET /es/legal 500 in 6320ms
+ ⨯ [Error: Cannot find module './vendor-chunks/zod.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/[locale]/legal/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/server/dev/static-paths-worker.js
+- /app/node_modules/next/dist/compiled/jest-worker/processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ GET /es/legal 500 in 921ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 722ms (1214 modules)
+ GET /es/legal 404 in 1213ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/app/.next/server/app/[locale]/legal/page.js'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/.next/server/app/[locale]/legal/page.js',
+  page: '/es/legal'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/app/.next/server/pages/_document.js'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/.next/server/pages/_document.js'
+}
+ GET /es/legal 500 in 4060ms
+ ⨯ Error: Cannot find module './5873.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/[locale]/legal/page.js:2:30259)
+    at Object.<anonymous> (.next/server/app/[locale]/legal/page.js:2:30325) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ ⨯ Error: Cannot find module './5611.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:327)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:374) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './5873.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/[locale]/legal/page.js:2:30259)
+    at Object.<anonymous> (.next/server/app/[locale]/legal/page.js:2:30325) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ ⨯ Error: Cannot find module './5611.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:327)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:374) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET /es/legal 500 in 292ms
+ GET /es/legal 500 in 74ms
+ ⨯ Error: Cannot find module './5873.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/[locale]/legal/page.js:2:30259)
+    at Object.<anonymous> (.next/server/app/[locale]/legal/page.js:2:30325) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ ⨯ Error: Cannot find module './5611.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:327)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:374) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './5873.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/[locale]/legal/page.js:2:30259)
+    at Object.<anonymous> (.next/server/app/[locale]/legal/page.js:2:30325) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ ⨯ Error: Cannot find module './5611.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:327)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:374) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET /es/legal 500 in 226ms
+ GET /es/legal 500 in 72ms
+ ⨯ Error: Cannot find module './5873.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/[locale]/legal/page.js:2:30259)
+    at Object.<anonymous> (.next/server/app/[locale]/legal/page.js:2:30325) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ ⨯ Error: Cannot find module './5611.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:327)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:374) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './5873.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/[locale]/legal/page.js:2:30259)
+    at Object.<anonymous> (.next/server/app/[locale]/legal/page.js:2:30325) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ ⨯ Error: Cannot find module './5611.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:327)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:374) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET /es/legal 500 in 220ms
+ GET /es/legal 500 in 74ms
+ ⨯ Error: Cannot find module './5873.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/[locale]/legal/page.js:2:30259)
+    at Object.<anonymous> (.next/server/app/[locale]/legal/page.js:2:30325) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ ⨯ Error: Cannot find module './5611.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:327)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:374) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './5873.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/[locale]/legal/page.js:2:30259)
+    at Object.<anonymous> (.next/server/app/[locale]/legal/page.js:2:30325) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/es/legal'
+}
+ ⨯ Error: Cannot find module './5611.js'
+Require stack:
+- /app/.next/server/webpack-runtime.js
+- /app/.next/server/app/_not-found/page.js
+- /app/node_modules/next/dist/server/require.js
+- /app/node_modules/next/dist/server/load-components.js
+- /app/node_modules/next/dist/build/utils.js
+- /app/node_modules/next/dist/build/swc/options.js
+- /app/node_modules/next/dist/build/swc/index.js
+- /app/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /app/node_modules/next/dist/server/config.js
+- /app/node_modules/next/dist/server/next.js
+- /app/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:327)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:374) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET /es/legal 500 in 250ms
+ GET /es/legal 500 in 107ms

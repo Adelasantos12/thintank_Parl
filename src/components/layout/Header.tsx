@@ -23,36 +23,36 @@ export default function Header() {
           </div>
 
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/about" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+            <Link href="/about" className="text-[#0F2537] hover:text-[#8B261D] font-sans font-semibold text-[14px] tracking-tight transition-colors">
               About us
             </Link>
-            <Link href="/work-areas" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+            <Link href="/work-areas" className="text-[#0F2537] hover:text-[#8B261D] font-sans font-semibold text-[14px] tracking-tight transition-colors">
               Work areas
             </Link>
-            <Link href="/publications" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+            <Link href="/publications" className="text-[#0F2537] hover:text-[#8B261D] font-sans font-semibold text-[14px] tracking-tight transition-colors">
               Publications
             </Link>
-            <Link href="/training" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+            <Link href="/training" className="text-[#0F2537] hover:text-[#8B261D] font-sans font-semibold text-[14px] tracking-tight transition-colors">
               Training
             </Link>
-            <Link href="/news" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+            <Link href="/news" className="text-[#0F2537] hover:text-[#8B261D] font-sans font-semibold text-[14px] tracking-tight transition-colors">
               News
             </Link>
-            <Link href="/events" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+            <Link href="/events" className="text-[#0F2537] hover:text-[#8B261D] font-sans font-semibold text-[14px] tracking-tight transition-colors">
               Events
             </Link>
-            <Link href="/contact" className="text-black hover:text-slate-600 font-sans font-medium text-[14px] tracking-tight transition-colors">
+            <Link href="/contact" className="text-[#0F2537] hover:text-[#8B261D] font-sans font-semibold text-[14px] tracking-tight transition-colors">
               Contact
             </Link>
           </nav>
 
           <div className="flex items-center space-x-4">
-            <div className="flex space-x-2 text-[12px] font-semibold text-slate-700">
-              <Link href="/" locale="en" className="hover:text-black uppercase px-2 py-1 rounded hover:bg-slate-100 transition-colors">EN</Link>
+            <div className="flex space-x-2 text-[12px] font-bold text-[#0F2537]">
+              <Link href="/" locale="en" className="hover:text-[#8B261D] uppercase px-2 py-1 rounded hover:bg-slate-100 transition-colors">EN</Link>
               <span className="text-slate-300">|</span>
-              <Link href="/" locale="fr" className="hover:text-black uppercase px-2 py-1 rounded hover:bg-slate-100 transition-colors">FR</Link>
+              <Link href="/" locale="fr" className="hover:text-[#8B261D] uppercase px-2 py-1 rounded hover:bg-slate-100 transition-colors">FR</Link>
               <span className="text-slate-300">|</span>
-              <Link href="/" locale="es" className="hover:text-black uppercase px-2 py-1 rounded hover:bg-slate-100 transition-colors">ES</Link>
+              <Link href="/" locale="es" className="hover:text-[#8B261D] uppercase px-2 py-1 rounded hover:bg-slate-100 transition-colors">ES</Link>
             </div>
           </div>
         </div>

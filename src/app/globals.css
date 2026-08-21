@@ -25,12 +25,13 @@
 }
 
 @theme {
-  --color-ink: #000000;
-  --color-navy: #000000;
-  --color-slate: #4A5568;
+  --color-ink: #0F172A;
+  --color-navy: #0F2537;
+  --color-burnt-red: #8B261D;
+  --color-slate: #475569;
   --color-border-custom: #E2E8F0;
-  --color-background-custom: #FAFAFA;
-  --color-accent: #B3B3B3;
+  --color-background-custom: #F8FAFC;
+  --color-accent: #8B261D;
 
   --font-heading: "TT Rationalist", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-body: "Montserrat", var(--font-source-serif), ui-sans-serif, system-ui, sans-serif;
@@ -68,14 +69,69 @@ body {
 .tag-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.125rem 0.625rem;
+  padding: 0.15rem 0.65rem;
   border-radius: 4px;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background-color: #F1F5F9;
-  color: #334155;
+  background-color: #F8FAFC;
+  color: #0F2537;
+  border: 1px solid #E2E8F0;
+}
+
+.tag-badge-red {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #FDF2F2;
+  color: #8B261D;
+  border: 1px solid #F87171_20;
+}
+
+.tag-badge-navy {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #F0F4F8;
+  color: #0F2537;
+  border: 1px solid #CBD5E1;
+}
+
+.btn-navy {
+  background-color: #0F2537;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.btn-navy:hover {
+  background-color: #1A3650;
+  box-shadow: 0 4px 12px rgba(15, 37, 55, 0.15);
+}
+
+.btn-burnt-red {
+  background-color: #8B261D;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.btn-burnt-red:hover {
+  background-color: #A62E23;
+  box-shadow: 0 4px 12px rgba(139, 38, 29, 0.2);
 }
 
 @layer base {

@@ -9,24 +9,30 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale, slug } = await params;
   const payload = await getPayloadClient();
 
-  const result = await payload.find({
-    collection: 'publications',
-    locale: locale as any,
-    where: { slug: { equals: slug } },
-  });
+  if (!payload) return { title: 'Not Found' };
 
-  if (result.docs.length === 0) return { title: 'Not Found' };
+  try {
+    const result = await payload.find({
+      collection: 'publications',
+      locale: locale as any,
+      where: { slug: { equals: slug } },
+    });
 
-  const pub = result.docs[0];
-  return {
-    title: pub.title,
-    description: pub.abstract,
-    openGraph: {
+    if (result.docs.length === 0) return { title: 'Not Found' };
+
+    const pub = result.docs[0];
+    return {
       title: pub.title,
       description: pub.abstract,
-      type: 'article',
-    },
-  };
+      openGraph: {
+        title: pub.title,
+        description: pub.abstract,
+        type: 'article',
+      },
+    };
+  } catch {
+    return { title: 'Not Found' };
+  }
 }
 
 export default async function PublicationDetailPage({
@@ -37,19 +43,27 @@ export default async function PublicationDetailPage({
   const { locale, slug } = await params;
   const payload = await getPayloadClient();
 
-  const result = await payload.find({
-    collection: 'publications',
-    locale: locale as any,
-    where: {
-      slug: { equals: slug },
-    },
-  });
-
-  if (result.docs.length === 0) {
+  if (!payload) {
     notFound();
   }
 
-  const pub = result.docs[0];
+  let pub = null;
+  try {
+    const result = await payload.find({
+      collection: 'publications',
+      locale: locale as any,
+      where: {
+        slug: { equals: slug },
+      },
+    });
+
+    if (result.docs.length === 0) {
+      notFound();
+    }
+    pub = result.docs[0];
+  } catch {
+    notFound();
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

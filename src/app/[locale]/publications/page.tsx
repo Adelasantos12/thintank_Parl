@@ -13,43 +13,56 @@ export default async function PublicationsPage({
   const resolvedSearchParams = await searchParams;
   const payload = await getPayloadClient();
 
-  // Fetch taxonomies for filters
-  const [types, topics, regions] = await Promise.all([
-    payload.find({ collection: 'publication-types', locale: locale as any, limit: 100 }),
-    payload.find({ collection: 'topics', locale: locale as any, limit: 100 }),
-    payload.find({ collection: 'regions', locale: locale as any, limit: 100 }),
-  ]);
+  let types = { docs: [] };
+  let topics = { docs: [] };
+  let regions = { docs: [] };
+  let publications = { docs: [] };
+
+  if (payload) {
+    try {
+      const [typesRes, topicsRes, regionsRes] = await Promise.all([
+        payload.find({ collection: 'publication-types', locale: locale as any, limit: 100 }),
+        payload.find({ collection: 'topics', locale: locale as any, limit: 100 }),
+        payload.find({ collection: 'regions', locale: locale as any, limit: 100 }),
+      ]);
+      types = typesRes as any;
+      topics = topicsRes as any;
+      regions = regionsRes as any;
+
+      // Build query
+      const query: any = {
+        and: [],
+      };
+
+      if (resolvedSearchParams.type) {
+        query.and.push({ type: { equals: resolvedSearchParams.type } });
+      }
+      if (resolvedSearchParams.topic) {
+        query.and.push({ topics: { contains: resolvedSearchParams.topic } });
+      }
+      if (resolvedSearchParams.region) {
+        query.and.push({ regions: { contains: resolvedSearchParams.region } });
+      }
+      if (resolvedSearchParams.year) {
+        query.and.push({ year: { equals: Number(resolvedSearchParams.year) } });
+      }
+      if (resolvedSearchParams.q) {
+        query.and.push({ title: { like: resolvedSearchParams.q } });
+      }
+
+      publications = (await payload.find({
+        collection: 'publications',
+        locale: locale as any,
+        where: query.and.length > 0 ? query : {},
+        sort: '-year',
+      })) as any;
+    } catch (e) {
+      console.warn('Failed to fetch publications from payload:', e);
+    }
+  }
 
   // Static years for now or could be dynamic
   const years = Array.from({ length: 10 }, (_, i) => new Date().getFullYear() - i);
-
-  // Build query
-  const query: any = {
-    and: [],
-  };
-
-  if (resolvedSearchParams.type) {
-    query.and.push({ type: { equals: resolvedSearchParams.type } });
-  }
-  if (resolvedSearchParams.topic) {
-    query.and.push({ topics: { contains: resolvedSearchParams.topic } });
-  }
-  if (resolvedSearchParams.region) {
-    query.and.push({ regions: { contains: resolvedSearchParams.region } });
-  }
-  if (resolvedSearchParams.year) {
-    query.and.push({ year: { equals: Number(resolvedSearchParams.year) } });
-  }
-  if (resolvedSearchParams.q) {
-    query.and.push({ title: { like: resolvedSearchParams.q } });
-  }
-
-  const publications = await payload.find({
-    collection: 'publications',
-    locale: locale as any,
-    where: query.and.length > 0 ? query : {},
-    sort: '-year',
-  });
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

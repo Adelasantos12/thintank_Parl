@@ -11,7 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return [];
   }
   const locales = ['en', 'fr', 'es']
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://gipg.ch'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://parliamentarygovernance.org'
 
   const routes = ['', '/publications', '/about', '/governance', '/contact', '/legal']
 
@@ -27,17 +27,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   // Add publications
-  const publications = await payload.find({
-    collection: 'publications',
-    limit: 1000,
-  })
+  try {
+    const publications = await payload.find({
+      collection: 'publications',
+      limit: 1000,
+    })
 
-  const publicationEntries: MetadataRoute.Sitemap = publications.docs.flatMap((pub: any) =>
-    locales.map(locale => ({
-      url: `${baseUrl}/${locale}/publications/${pub.slug}`,
-      lastModified: new Date(pub.updatedAt),
-    }))
-  )
+    const publicationEntries: MetadataRoute.Sitemap = publications.docs.flatMap((pub: any) =>
+      locales.map(locale => ({
+        url: `${baseUrl}/${locale}/publications/${pub.slug}`,
+        lastModified: new Date(pub.updatedAt),
+      }))
+    )
 
-  return [...staticEntries, ...publicationEntries]
+    return [...staticEntries, ...publicationEntries]
+  } catch {
+    return staticEntries
+  }
 }

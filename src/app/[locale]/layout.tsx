@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'GCPG',
     description: 'Independent think tank devoted to the comparative study of parliaments, legislative procedure and the quality of law-making.',
-    url: 'https://gcpg.ch',
+    url: 'https://parliamentarygovernance.org',
     siteName: 'GCPG',
     locale: 'en_US',
     type: 'website',

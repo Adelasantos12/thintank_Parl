@@ -12,11 +12,11 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
               <Image
-                src="/images/logo-horizontal.png"
-                alt="GCPG Logo"
-                width={220}
-                height={45}
-                className="brightness-0 invert h-9 w-auto object-contain"
+                src="/images/gcpg-footer-white-v2.png"
+                alt="GCPG - Genève Centre for Parliamentary Governance Logo"
+                width={300}
+                height={64}
+                className="h-12 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
               />
             </div>
             <p className="text-slate-300 max-w-sm mb-8 leading-relaxed font-light">
@@ -24,7 +24,7 @@ export default function Footer() {
               An independent, non-profit think tank based in Geneva, Switzerland.
             </p>
             <div className="max-w-sm">
-              <h4 className="text-[12px] font-bold uppercase tracking-wider text-[#8B261D] bg-white/10 px-2.5 py-1 rounded inline-block mb-3">Subscribe to News &amp; Briefs</h4>
+              <h4 className="text-[12px] font-bold uppercase tracking-wider text-white bg-[#8B261D] px-2.5 py-1 rounded inline-block mb-3 shadow-sm">Subscribe to News &amp; Briefs</h4>
               <p className="text-[13px] text-slate-300 mb-4 font-light">Stay informed about our latest research, comparative studies, and executive training.</p>
               <SubscribeForm />
             </div>

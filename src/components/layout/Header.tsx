@@ -14,9 +14,9 @@ export default function Header() {
               <Image
                 src="/images/logo-horizontal.png"
                 alt="GCPG - Genève Center for Parliamentary Governance"
-                width={320}
-                height={70}
-                className="h-11 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                width={360}
+                height={90}
+                className="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                 priority
               />
             </Link>

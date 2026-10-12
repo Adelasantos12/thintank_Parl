@@ -20,15 +20,14 @@ export default function ContactPage() {
           <div>
             <h3 className="font-bold text-navy uppercase tracking-widest mb-4 text-xs">{t('office')}</h3>
             <p className="text-slate whitespace-pre-line">
-              Geneva Institute for Parliamentary Governance<br />
+              Genève Center for Parliamentary Governance (GCPG)<br />
               {t('address')}
             </p>
           </div>
           <div>
             <h3 className="font-bold text-navy uppercase tracking-widest mb-4 text-xs">Email</h3>
             <p className="text-slate">
-              info@gipg.ch<br />
-              publications@gipg.ch
+              <a href="mailto:contact@parliamentarygovernance.org" className="hover:text-navy underline">contact@parliamentarygovernance.org</a>
             </p>
           </div>
         </div>

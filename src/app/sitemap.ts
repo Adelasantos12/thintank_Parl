@@ -11,7 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return [];
   }
   const locales = ['en', 'fr', 'es']
-  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://gipg.ch'
+  const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://parliamentarygovernance.org'
 
   const routes = ['', '/publications', '/about', '/governance', '/contact', '/legal']
 
